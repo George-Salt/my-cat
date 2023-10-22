@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+h1 {
+  border-bottom: #9198e5 solid 3px;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.description .description__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 220px;
+  background: linear-gradient(0.25turn, #e66465, #9198e5);
+  font-size: 25px;
+  border-radius: 10px;
+  border-bottom-left-radius: 100px;
+  border: black solid 3px;
+  margin-left: 50px;
+  transition: all 0.25s ease;
+  -ms-user-select: none; 
+  -moz-user-select: none; 
+  -webkit-user-select: none; 
+  user-select: none; 
+}
+
+.description .description__header:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.description .description__header:hover {
+  background: linear-gradient(0.25turn, #e66465, #e5d691);
+  cursor: pointer;
+}
+
+.description__header:hover + .description__texts {
+  background: linear-gradient(0.25turn, #e5d691, #e5d691, #e66465);
+}
+
+.description .description__texts {
+  margin-left: 20px;
+  width: 700px;
+  height: 220px;
+  background: linear-gradient(0.25turn, #9198e5, #9198e5, #e66465);
+  font-size: 30px;
+  border-radius: 10px;
+  border-top-right-radius: 100px;
+  border: black solid 3px;
+  margin-right: 50px;
+  font-size: 18px;
+}
+
+.description__texts p {
+  margin: 30px;
+}
+
+.gallery img {
+  border-radius: 40px;
+  border: black solid 3px;
+  transition: all 0.25s ease;
+}
+
+.gallery img {
+  border-radius: 40px;
+  border: black solid 3px;
+  cursor: pointer;
+}
+
+.gallery img:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  cursor: pointer;
+}
